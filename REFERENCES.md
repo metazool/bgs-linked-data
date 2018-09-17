@@ -24,6 +24,12 @@ We have a simple web service which looks up similar entities and optionally trie
 For links to taxonomic terms in palaeobiology we'd like if possible to use a URI scheme based on mikrotax.org and get an export of RDF data directly from mikrotax
 
 
+## Tesseract OCR
+
+https://github.com/tesseract-shadow/tesseract-ocr-re - base docker image for running Tesseract. Without any extra configuration of the engine the results were acceptable.
+
+
+https://github.com/UW-Deepdive-Infrastructure/blackstack - this includes a Dockerfile to build a container based on the above docker distribution. ITs not working out of the box though and I need to find the time and good reasons to help testing and debugging the parts that extract statistics and pop up a web interface to add training data. But having the processing utility shell scripts on top of the standard docker image above is already helpfull.
 
 
 
